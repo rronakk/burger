@@ -11,17 +11,18 @@ var orm = {
 
     },
     insertOne : function(table, col1, col2, val1, val2, cb){
-        var queryString = "INSERT INTO " + table + " (?? , ??) VALUES(??, ??);";
-        console.log(queryString);
-        connection.query(queryString, function(err, result){
+
+        var queryString = "INSERT INTO ?? ( ??, ??) VALUES ( ?, ?)";
+        connection.query(queryString,[table, col1, col2, val1, val2], function(err, result){
             if(err) throw err;
             console.log(result);
             cb(result);
         })
     },
     updateOne : function(table, updateCol, updateValue, conditionCol, conditionVal, cb){
-        var queryString = "UPDATE" + table + "SET  ?? = ??  WHERE ??= ??;";
-        connection.query(queryString, function(err, result){
+        var queryString = "UPDATE ?? SET  ?? = ?  WHERE ??= ?";
+        connection.query(queryString,[table, updateCol, updateValue, conditionCol, conditionVal], function(err, result){
+            console.log(queryString);
             if(err) throw err;
             console.log(result);
             cb(result);
