@@ -1,11 +1,12 @@
-<li>
-	{{burger_name}}
+<li class="mdl-list__item">
+	<span class="mdl-list__item-primary-content">
+      {{burger_name}}
+    </span>
 	{{#unless devoured}}
-		<button class="ate-it" data-id="{{id}}">Devoured!</button>
+		<!-- Colored mini FAB button -->
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent ate-it" data-id="{{id}} ">
+		<i class="material-icons">arrow_right_alt</i>
+		</button>
+		
 	{{/unless}}
-
-	{{!-- <button class="" data-id="{{id}}" data-newsleep="{{devoured}}">
-	</button> --}}
-
-	{{!-- <button class="delete-cat" data-id="{{this.id}}">DELETE!</button> --}}
 </li>
