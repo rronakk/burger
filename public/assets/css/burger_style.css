@@ -1,3 +1,15 @@
+body{
+    background-image : url("../img/adjusted_burger.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+img{
+    opacity : 0.2;
+
+}
+
 .bg-add{
     justify-content: center;
     width: 30%;
@@ -10,4 +22,27 @@
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+}
+.burger_item{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right-border{
+    border-right:5px;
+    border-right-style: solid;
+}
+h2{
+    text-decoration: underline;
+    text-align: center;
+}
+.bg_name{
+    background-color: rgb(126, 131, 136);
+    font-size: 25px;
+    color: white;
+}
+#b_name{
+    background-color: gray;
+    font-size: 25px;
+
 }
