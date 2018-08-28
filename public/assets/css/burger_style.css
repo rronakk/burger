@@ -1,10 +1,10 @@
-body{
+/* body{
     background-image : url("../img/adjusted_burger.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
-}
+} */
 img{
     opacity : 0.2;
 
@@ -37,12 +37,12 @@ h2{
     text-align: center;
 }
 .bg_name{
-    background-color: rgb(126, 131, 136);
+    /* background-color: rgb(126, 131, 136); */
     font-size: 25px;
-    color: white;
+    /* color: white; */
 }
 #b_name{
-    background-color: gray;
+    /* background-color: gray; */
     font-size: 25px;
 
 }
